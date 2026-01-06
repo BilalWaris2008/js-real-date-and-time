@@ -18,16 +18,17 @@ function showDateTime() {
     document.getElementById("showdate").innerHTML = `${currentDate} ${monName} ${dayName} ${currentYear}`
 
     let hours = now.getHours()
-    
+    hours = hours % 12
 
     let min = now.getMinutes()
     let sec = now.getSeconds()
+    let millisec = now.getMilliseconds()
 
-    document.getElementById("showtime").innerHTML = `${hours}:${min}:${sec}`
+    document.getElementById("showtime").innerHTML = `${hours}:${min}:${sec}:${millisec}`
 }
 showDateTime()
 
-setInterval(showDateTime, 1000)
+setInterval(showDateTime, 1)
 
 
 
