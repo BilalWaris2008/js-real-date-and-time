@@ -1,7 +1,6 @@
 
-
 function showDateTime() {
-   
+
     let now = new Date()
     console.log(now);
 
@@ -13,7 +12,19 @@ function showDateTime() {
     let monName = months[now.getMonth()]
     console.log(monName);
 
+    let currentDate = now.getDate()
+    console.log(currentDate);
+
+    let currentYear = now.getFullYear()
+    console.log(currentYear);
+
+
+    document.getElementById("showdate").innerHTML = `${currentDate} ${monName} ${dayName} ${currentYear}`
+
 }
+
 showDateTime()
+
+
 
 
