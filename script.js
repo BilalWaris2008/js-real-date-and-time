@@ -22,13 +22,12 @@ function showDateTime() {
 
     let min = now.getMinutes()
     let sec = now.getSeconds()
-    let millisec = now.getMilliseconds()
 
-    document.getElementById("showtime").innerHTML = `${hours}:${min}:${sec}:${millisec}`
+    document.getElementById("showtime").innerHTML = `${hours}:${min}:${sec}`
 }
 showDateTime()
 
-setInterval(showDateTime, 1)
+setInterval(showDateTime, 1000)
 
 
 
