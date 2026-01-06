@@ -18,7 +18,7 @@ function showDateTime() {
     document.getElementById("showdate").innerHTML = `${currentDate} ${monName} ${dayName} ${currentYear}`
 
     let hours = now.getHours()
-    hours = hours % 12
+    
 
     let min = now.getMinutes()
     let sec = now.getSeconds()
